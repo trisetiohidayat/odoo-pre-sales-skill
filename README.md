@@ -25,7 +25,7 @@ $odoo-pre-sales
 Install a specific release or branch:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/trisetiohidayat/odoo-pre-sales-skill/main/install.sh | bash -s -- --version v0.1.1
+curl -fsSL https://raw.githubusercontent.com/trisetiohidayat/odoo-pre-sales-skill/main/install.sh | bash -s -- --version v0.1.2
 ```
 
 Install into a custom skill directory:

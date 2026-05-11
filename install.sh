@@ -84,10 +84,10 @@ copy_skill() {
   cp -R "$source_dir" "$DEST"
 }
 
-SCRIPT_PATH="${BASH_SOURCE[0]:-}"
+SCRIPT_PATH="$0"
 SCRIPT_DIR=""
 LOCAL_SKILL_DIR=""
-if [[ -n "$SCRIPT_PATH" && -f "$SCRIPT_PATH" ]]; then
+if [[ "$SCRIPT_PATH" != "bash" && "$SCRIPT_PATH" != "sh" && -f "$SCRIPT_PATH" ]]; then
   SCRIPT_DIR="$(cd "$(dirname "$SCRIPT_PATH")" && pwd)"
   LOCAL_SKILL_DIR="$SCRIPT_DIR/skills/$SKILL_NAME"
 fi
