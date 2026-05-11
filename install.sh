@@ -84,10 +84,15 @@ copy_skill() {
   cp -R "$source_dir" "$DEST"
 }
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-LOCAL_SKILL_DIR="$SCRIPT_DIR/skills/$SKILL_NAME"
+SCRIPT_PATH="${BASH_SOURCE[0]:-}"
+SCRIPT_DIR=""
+LOCAL_SKILL_DIR=""
+if [[ -n "$SCRIPT_PATH" && -f "$SCRIPT_PATH" ]]; then
+  SCRIPT_DIR="$(cd "$(dirname "$SCRIPT_PATH")" && pwd)"
+  LOCAL_SKILL_DIR="$SCRIPT_DIR/skills/$SKILL_NAME"
+fi
 
-if [[ -f "$LOCAL_SKILL_DIR/SKILL.md" ]]; then
+if [[ -n "$LOCAL_SKILL_DIR" && -f "$LOCAL_SKILL_DIR/SKILL.md" ]]; then
   copy_skill "$LOCAL_SKILL_DIR"
 else
   ARCHIVE_URL="https://github.com/${REPO}/archive/${REF}.tar.gz"
