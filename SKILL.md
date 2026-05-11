@@ -130,15 +130,15 @@ Keep documents concise but demo-ready. Sales and functional users should be able
 
 ## Visual Asset Rules
 
-Use images wherever they materially improve the demo: products, categories, company logo, website pages, and module icons. Read `references/visual-assets.md` before creating or loading image assets.
+Use images wherever they materially improve the demo: products, categories, company logo, website pages, and module icons. Read [visual-assets.md](references/visual-assets.md) before creating or loading image assets.
 
 ## Demo Users and Roles
 
-Seed demo users for every major workflow in scope. Read `references/demo-data.md` for role matrix, credential rules, and validation expectations.
+Seed demo users for every major workflow in scope. Read [demo-data.md](references/demo-data.md) for role matrix, credential rules, and validation expectations.
 
 ## End-to-End Demo Transactions
 
-Seed complete transactions, not only master data. Read `references/demo-data.md` for the recommended PO, receipt, website sale, delivery, invoice, payment, POS, return, and KPI sequence.
+Seed complete transactions, not only master data. Read [demo-data.md](references/demo-data.md) for the recommended PO, receipt, website sale, delivery, invoice, payment, POS, return, and KPI sequence.
 
 ## Lifecycle Scripts
 
@@ -165,27 +165,27 @@ Write validation results to `<demo_slug>/reports/validation-report.md`. The fina
 
 ## Screenshot Evidence
 
-After Odoo starts and validation passes, capture screenshots under `<demo_slug>/screenshots/` to prove the demo can be presented. Read `references/evidence-and-integrations.md` for the required screenshot list and fallback rules.
+After Odoo starts and validation passes, capture screenshots under `<demo_slug>/screenshots/` to prove the demo can be presented. Read [evidence-and-integrations.md](references/evidence-and-integrations.md) for the required screenshot list and fallback rules.
 
 ## Integration Mock Workflow
 
-When integrations are requested but real credentials are absent, create visible mocks and document that they are not live integrations. Read `references/evidence-and-integrations.md` for QRIS, e-Faktur/Coretax, shipping, marketplace, WhatsApp/chat, and API mock guidance.
+When integrations are requested but real credentials are absent, create visible mocks and document that they are not live integrations. Read [evidence-and-integrations.md](references/evidence-and-integrations.md) for QRIS, e-Faktur/Coretax, shipping, marketplace, WhatsApp/chat, and API mock guidance.
 
 ## Industry Data Packs
 
-Use company research and user answers to choose a primary industry pack and optional secondary pack. Read `references/industry-data-packs.md` when deciding seed data for retail, manufacturing, services, distribution, food and beverage, or education. Document the chosen pack in `solution-mapping.md` and `data-manifest.md`.
+Use company research and user answers to choose a primary industry pack and optional secondary pack. Read [industry-data-packs.md](references/industry-data-packs.md) when deciding seed data for retail, manufacturing, services, distribution, food and beverage, or education. Document the chosen pack in `solution-mapping.md` and `data-manifest.md`.
 
 ## Operational Hardening
 
-Before final handover, apply `references/operational-hardening.md` for scaffold/template generation, reusable seed helpers, demo quality scoring, rollback strategy, security/access checks, localization checks, performance sanity checks, pitch export, and client risk register. Skip only with an explicit reason in `handover.md`.
+Before final handover, apply [operational-hardening.md](references/operational-hardening.md) for scaffold/template generation, reusable seed helpers, demo quality scoring, rollback strategy, security/access checks, localization checks, performance sanity checks, pitch export, and client risk register. Skip only with an explicit reason in `handover.md`.
 
 ## Advanced Artifacts
 
-Before final handover, apply `references/advanced-artifacts.md` for `demo-manifest.json`, machine-readable BRQ, decision log, acceptance criteria, known issue tracker, custom module lint, Odoo shell smoke snippets, privacy check, competitive positioning, cost model, change management, migration plan, deployment options, and post-demo follow-up.
+Before final handover, apply [advanced-artifacts.md](references/advanced-artifacts.md) for `demo-manifest.json`, machine-readable BRQ, decision log, acceptance criteria, known issue tracker, custom module lint, Odoo shell smoke snippets, privacy check, competitive positioning, cost model, change management, migration plan, deployment options, and post-demo follow-up.
 
 ## Demo Operations
 
-Before final handover, apply `references/demo-operations.md` for traceability matrix, demo variants, rehearsal checklist, error recovery playbook, and root-level `presales-index.json`.
+Before final handover, apply [demo-operations.md](references/demo-operations.md) for traceability matrix, demo variants, rehearsal checklist, error recovery playbook, and root-level `presales-index.json`.
 
 ## Discovery Phase
 
